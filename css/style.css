@@ -911,15 +911,6 @@ svg path {
   background-color: #F3F3F3;
 }
 
-.getintouch__item.item-getintouch:hover .button {
-  border: 1px solid white;
-  color: white;
-}
-
-.getintouch__item.item-getintouch:hover .button:hover {
-  border: 1px solid transparent;
-}
-
 .item-getintouch {
   background-color: #fff;
   text-align: center;
@@ -2551,6 +2542,15 @@ svg path {
 
   .subscribe__button:hover {
     background-color: #f85515;
+  }
+
+  .getintouch__item.item-getintouch:hover .button {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .getintouch__item.item-getintouch:hover .button:hover {
+    border: 1px solid transparent;
   }
 
   .item-getintouch__email:hover {
