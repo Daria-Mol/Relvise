@@ -477,9 +477,9 @@ svg path {
 }
 
 .bottom-footer__link img:hover {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main {
@@ -920,9 +920,9 @@ svg path {
   background-color: #fff;
   text-align: center;
   color: #0D5C63;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .item-getintouch:not(:last-child) {
