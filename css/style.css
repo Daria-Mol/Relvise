@@ -966,20 +966,6 @@ svg path {
   max-width: 10.4375rem;
 }
 
-.item-getintouch:hover {
-  margin-top: -1.875rem;
-  margin-bottom: -1.875rem;
-  background-color: #17213C;
-  color: #fff;
-}
-
-.item-getintouch:hover__button {
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  color: #fff;
-}
-
 .contactus__container {
   text-align: center;
 }
@@ -1268,20 +1254,22 @@ svg path {
     font-size: 4.5rem;
   }
 
-  .item-getintouch:hover {
-    padding-bottom: 5rem;
-  }
-
-  .item-getintouch:hover {
-    padding-top: 5rem;
-  }
-
   .contactus__container {
     padding-top: 2.5rem;
   }
 
   .contactus__container {
     padding-bottom: 2.5rem;
+  }
+}
+
+@media (any-hover: hover) and (min-width: 67.25em) {
+  .item-getintouch:hover {
+    padding-bottom: 5rem;
+  }
+
+  .item-getintouch:hover {
+    padding-top: 5rem;
   }
 }
 
@@ -1485,20 +1473,22 @@ svg path {
     font-size: 2.8125rem;
   }
 
-  .item-getintouch:hover {
-    padding-bottom: 1.875rem;
-  }
-
-  .item-getintouch:hover {
-    padding-top: 1.875rem;
-  }
-
   .contactus__container {
     padding-top: 1.25rem;
   }
 
   .contactus__container {
     padding-bottom: 1.25rem;
+  }
+}
+
+@media (any-hover: hover) and (max-width: 20em) {
+  .item-getintouch:hover {
+    padding-bottom: 1.875rem;
+  }
+
+  .item-getintouch:hover {
+    padding-top: 1.875rem;
   }
 }
 
@@ -2437,30 +2427,6 @@ svg path {
     }
 }
 
-@supports (padding-bottom: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
-    .item-getintouch:hover {
-      padding-bottom: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
-    .item-getintouch:hover {
-      padding-bottom: calc(1.875rem + 3.125 * (100vw - 20rem) / 47.25);
-    }
-}
-
-@supports (padding-top: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
-    .item-getintouch:hover {
-      padding-top: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem );
-    }
-}
-
-@supports not (padding-top: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
-    .item-getintouch:hover {
-      padding-top: calc(1.875rem + 3.125 * (100vw - 20rem) / 47.25);
-    }
-}
-
 @supports (padding-top: clamp( 1.25rem , 0.7208994709rem  +  2.6455026455vw , 2.5rem )) {
     .contactus__container {
       padding-top: clamp( 1.25rem , 0.7208994709rem  +  2.6455026455vw , 2.5rem );
@@ -2522,6 +2488,32 @@ svg path {
 }
 }
 
+@media (any-hover: hover) and (min-width: 20em) and (max-width: 67.25em) {
+@supports (padding-bottom: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
+    .item-getintouch:hover {
+      padding-bottom: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
+    .item-getintouch:hover {
+      padding-bottom: calc(1.875rem + 3.125 * (100vw - 20rem) / 47.25);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
+    .item-getintouch:hover {
+      padding-top: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 0.5522486772rem  +  6.6137566138vw , 5rem )) {
+    .item-getintouch:hover {
+      padding-top: calc(1.875rem + 3.125 * (100vw - 20rem) / 47.25);
+    }
+}
+}
+
 @media (any-hover: hover) {
   .button--orange:hover {
     background: #f85515;
@@ -2563,5 +2555,19 @@ svg path {
 
   .item-getintouch__email:hover {
     text-decoration: underline;
+  }
+
+  .item-getintouch:hover {
+    margin-top: -1.875rem;
+    margin-bottom: -1.875rem;
+    background-color: #17213C;
+    color: #fff;
+  }
+
+  .item-getintouch:hover__button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
   }
 }
